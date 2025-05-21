@@ -20,6 +20,13 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private void CounterBtn_Pressed(object sender, EventArgs e)
+        {
+
+            CounterBtn.BackgroundColor = Colors.Red;
+            CounterBtn.Text = "Estos manteniendo presionado";
+        }
     }
 
 }
